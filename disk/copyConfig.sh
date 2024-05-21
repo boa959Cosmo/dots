@@ -20,4 +20,8 @@
 #zshrc
  cp -R ~/.zshrc zshrc
 
- 
+#lf 
+ cp -R ~/.config/lf/. .config/lf
+
+#alacritty
+ cp -R ~/.config/alacritty/. .config/alacritty
