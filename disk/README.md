@@ -17,3 +17,4 @@ Config for my Laptop(_Disk_). Running Arch.
 * brightnessctl
 * pipewire
 * networkmanager
+* nvim with NvChad
