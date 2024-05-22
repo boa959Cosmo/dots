@@ -1,0 +1,10 @@
+set previewer ~/.config/lf/previewer
+
+# Basic Settings
+set hidden true
+set ignorecase true
+set sixel true
+cmd on-select &{{
+    lf -remote "send $id set statfmt \"$(exa -ld --color=always "$f")\""
+}}
+
