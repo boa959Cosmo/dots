@@ -25,3 +25,6 @@
 
 #alacritty
  cp -R ~/.config/alacritty/. .config/alacritty
+
+#Wallpapers
+ cp -R ~/Pictures/Wallpapers/. Pictures

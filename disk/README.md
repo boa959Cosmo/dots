@@ -18,3 +18,4 @@ Config for my Laptop(_Disk_). Running Arch.
 * pipewire
 * networkmanager
 * nvim with NvChad
+* ly (display manager)
