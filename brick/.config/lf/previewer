@@ -1,0 +1,34 @@
+#!/bin/sh
+case "$(file -Lb --mime-type -- "$1")" in
+    image/*)
+        chafa -f sixel -s "$2x$3" --animate off --polite on "$1"
+        exit 1
+        ;;
+    *)
+        previewer "$1"
+        ;;
+esac
+
+case "$(file -Lb --mime-type -- "$1")" in
+    text/*)
+        cat "$1"
+        exit 1
+        ;;
+    *)
+        previewer "$1"
+        ;;
+esac
+
+
+case "$(file -Lb --mime-type -- "$1")" in
+    application/pdf)
+        gs -o "/tmp/thumbnail.jpeg" -sDEVICE=jpeg -dLastPage=1 "$1" > /dev/null 
+        chafa -f sixel -s "$2x$3" --animate off --polite on "/tmp/thumbnail.jpeg"
+        rm /tmp/thumbnail.jpeg
+        exit 1
+        ;;
+    *)
+        previewer "$1"
+        ;;
+esac
+

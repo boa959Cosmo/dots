@@ -1,0 +1,7 @@
+set previewer '~/.config/lf/previewer'
+
+# Basic Settings
+set hidden true
+set ignorecase true
+set sixel true
+
