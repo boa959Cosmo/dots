@@ -1,0 +1,8 @@
+[opener]
+handlr = [
+	{ run = 'handlr open %s', orphan = true, desc = "Handlr" }
+]
+[open]
+rules = [
+  { url = "*", use = "handlr"}
+]

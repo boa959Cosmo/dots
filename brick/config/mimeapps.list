@@ -1,0 +1,9 @@
+[Default Applications]
+application/pdf=org.pwmt.zathura.desktop;
+image/*=imv.desktop;
+image/jpg=imv.desktop;
+text/html=firefox.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/postman=Postman.desktop;
+x-scheme-handler/terminal=org.codeberg.dnkl.foot.desktop;
